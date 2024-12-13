@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun J - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: black; /* Black background */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px;
+            background: white; /* White background for the resume */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2, h3 {
+            color: #00bcd4;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white; /* White background for each section */
+            border-radius: 8px;
+            transition: all 0.4s ease;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section:hover {
+            transform: translateY(-5px) scale(1.02);
+            background: #f1f1f1; /* Pale yellow on hover */
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+        .section h2 {
+            background-color: #007bff; /* Blue heading */
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+        }
+        .section:hover h2 {
+            background-color: #66bb6a; /* Green on hover */
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+         .contact-info .photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: url('https://raw.githubusercontent.com/VarunJaiprakash/image/main/Varun%20J%20photo-modified.png') no-repeat center/cover;
+    border: 5px solid #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .contact-info div {
+            width: 70%;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            color: black; /* Black color for text content */
+        }
+        .contact-info a {
+            color: black; /* Black link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: blue; /* Blue on hover */
+        }
+        .section p,
+        .section li,
+        .section ul {
+            color: black; /* Set text color to black */
+            line-height: 1.6; /* Increased line height for better spacing */
+        }
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-info .photo {
+                margin-top: 20px;
+            }
+            .contact-info div {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Varun J</h1>
+        
+        <!-- Contact Info Section with Photo on the Right -->
+        <div class="section contact-info">
+            <div>
+                <h2>Contact Information</h2>
+                <p>Date of Birth: 25-10-2002</p>
+                <p>Email: <a href="mailto:varunjaiprakash555@gmail.com">varunjaiprakash555@gmail.com</a></p>
+                <p>Mobile: 6364773567</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/varun-j-a1554a269" target="_blank">linkedin.com/in/varun-j-a1554a269</a></p>
+                <p>Location: Bengaluru</p>
+                <p>GitHub: <a href="https://github.com/VarunJaiprakash" target="_blank">github.com/VarunJaiprakash</a></p>
+            </div>
+            <div class="photo"></div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>Secondary School (10th Standard), CBSE Board - 80% (2018)</li>
+                <li>Pre-University, Karnataka State Board - 90% (2020)</li>
+                <li>B.E in Medical Electronics, M S Ramaiah Institute of Technology - CGPA 8.4 (2024)</li>
+            </ul>
+        </div>
+
+        <!-- Career Objective Section -->
+        <div class="section">
+            <h2>Career Objective</h2>
+            <p>Aim to pursue as a Full Stack Software Developer, to leverage my skills in front-end and backend development to create innovative, scalable solutions while continuously learning and contributing to occupational growth and success.</p>
+        </div>
+
+        <!-- Professional Summary Section -->
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>A Medical Electronics Engineering graduate with a strong focus on software development, skilled in Java, Python, Oracle SQL, and front-end technologies like HTML, CSS, JSP, and JavaScript. Experienced in designing user-friendly interfaces and developing functional back-end systems through diverse projects and internships. Quick Learner, seeking a challenging role as a full-stack developer to further enhance my technical expertise.</p>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>Internship in Auptimo Technologies New Delhi: Worked as an Image Processing Intern and developed Object Tracking System using OpenCV and PySDL2.</li>
+                <li>HackerRank Certified: Certified in Python, Java, and SQL Basics with 3 months of hands-on experience in software development and system design.</li>
+                <li>Java Full Stack Development: Gained knowledge in Core Java, Advance Java (J2EE), Oracle Database Management using SQL and PL/SQL, and Web Technologies like Spring and Hibernate.</li>
+            </ul>
+        </div>
+
+        <!-- Programming Languages Section -->
+        <div class="section">
+            <h2>Programming Languages</h2>
+            <ul>
+                <li>C, C++, Python, Java, HTML, XML, CSS, MATLAB, Embedded C, SQL (Oracle DB)</li>
+            </ul>
+        </div>
+
+        <!-- Operating Systems and IDEs Section -->
+        <div class="section">
+            <h2>Operating Systems & IDEs</h2>
+            <ul>
+                <li>Windows OS</li>
+                <li>Visual Studio Code (C, C++, Python)</li>
+                <li>Eclipse IDE (Java, Web, Frameworks)</li>
+                <li>Arduino IDE</li>
+            </ul>
+        </div>
+
+        <!-- Medium of Communication Section -->
+        <div class="section">
+            <h2>Medium of Communication</h2>
+            <ul>
+                <li>Kannada (Native Language), English, Hindi (Read, Write, Speak)</li>
+            </ul>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Signal Processing and Image Processing using MATLAB/Python</li>
+                <li>Data Structures and Algorithms using C++</li>
+                <li>Responsive Graphical User Interface using Python</li>
+                <li>Static and Dynamic Web Technologies using HTML, CSS, JavaScript, and JSP</li>
+                <li>DBMS using SQL and PL/SQL (Oracle DB)</li>
+                <li>Java Programming including Core Java, Multithreading, Collections, and Advanced Java Concepts</li>
+                <li>Java Technologies: J2EE, JDBC, Servlets</li>
+                <li>Spring Framework (Spring ORM, Spring MVC, Spring Hibernate)</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>Gait Analysis: Design and Development of Wearable Gait System [2024]. Used IMU sensor data for gait analysis and achieved 95% accuracy with Quadratic SVM Classifier.</li>
+                <li>Automatic Classification of EEG: Detection of Insomnia in EEG Data by SVM Classifier. Achieved 92% accuracy in classifying individuals with insomnia.</li>
+                <li>Real-Time Object Tracking System: Developed with Python for real-time detection and tracking, integrating back-end processing and a user-friendly front-end.</li>
+            </ul>
+        </div>
+
+        <!-- Soft Skills Section -->
+        <div class="section">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Effective Communication</li>
+                <li>Analytical Thinking</li>
+                <li>Quick Adaptability</li>
+                <li>Continuous Learner</li>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+                <li>Mindfulness</li>
+                <li>Project Experience</li>
+            </ul>
+        </div>
+
+        <!-- Extra Curricular Achievements Section -->
+        <div class="section">
+            <h2>Extra Curricular Achievements</h2>
+            <ul>
+                <li>MS Ramaiah Alumni Award 2024: 1st place for final year project on Human Gait Analysis using SVM.</li>
+                <li>First place in Circuit Challenge during "MEDIPULSE 2023" Technical Symposium.</li>
+                <li>Bronze medalist in Chess: 3rd place in 2021 Online Chess Bullet Tournament.</li>
+            </ul>
+        </div>
+
+        <!-- Training Courses and Certification Section -->
+        <div class="section">
+            <h2>Training Courses & Certifications</h2>
+            <ul>
+                <li>Introduction to Artificial Intelligence (Mycaptain)</li>
+                <li>Web Development / HTML / CSS (Mycaptain)</li>
+                <li>Data Analytics with Python (Mycaptain)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
